@@ -13,7 +13,7 @@ const PostCard = (props) => {
         <div
           className={style.postCardImg}
           style={{
-            backgroundImage: `url(${ './' + frontmatter.cover.name + frontmatter.cover.ext})`,
+            backgroundImage: `url(${frontmatter.cover})`,
           }}
         />
         <div className={style.mrTp20}>

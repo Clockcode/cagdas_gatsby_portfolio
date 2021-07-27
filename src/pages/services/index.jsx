@@ -79,13 +79,7 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            cover {
-              childImageSharp {
-                fluid {
-                  src
-                }
-              }
-            }
+            cover
           }
         }
       }

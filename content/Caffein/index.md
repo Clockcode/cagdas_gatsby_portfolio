@@ -2,7 +2,7 @@
 title: Caffein – The widely used python framework for web development
 path: projects/cravving-single-page-design
 demo: https://www.figma.com/proto/XUFU8CQ1iEIXDWhECihwbC/Caffein?node-id=35%3A10&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=35%3A10
-cover: ./caffein.jpg
+cover: https://i.ibb.co/5M41p1f/caffein.jpg
 excerpt: Django is a widely used python framework for web development. Learn what makes django so popular for backend development and why many startups and Tech giants prefer Django.
 ---
 

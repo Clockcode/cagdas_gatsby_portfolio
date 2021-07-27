@@ -1,7 +1,7 @@
 ---
 title: "My Community"
 path: projects/my-community
-cover: ./my-community.jpg
+cover: https://i.ibb.co/MBbjNmr/my-community.jpg
 excerpt: Venture I am working on to bring to life. Platform for immigrants who wants to get connections and get familiar with their city. 
 ---
 

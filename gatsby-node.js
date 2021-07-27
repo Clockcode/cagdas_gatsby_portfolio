@@ -13,10 +13,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             frontmatter {
               path
-              cover {
-                name
-                ext
-              }
+              cover
             }
             fileAbsolutePath
           }

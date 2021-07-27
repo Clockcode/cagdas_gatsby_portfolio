@@ -56,10 +56,7 @@ export const query = graphql`
             path
             title
             excerpt
-            cover {
-              name
-              ext
-            }
+            cover
           }
         }
       }

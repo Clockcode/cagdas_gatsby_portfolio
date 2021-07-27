@@ -2,7 +2,7 @@
 title: Sosial
 path: projects/sosial-landing-page
 demo: https://www.figma.com/proto/f8cHL1i14hTpRbNwEQXvTn/Sosial-Landing-Page?page-id=1%3A22&node-id=1%3A71&viewport=380%2C1599%2C0.44808828830718994&scaling=scale-down-width
-cover: ./sosial.jpg
+cover: https://i.ibb.co/Dbn35fp/sosial.jpg
 excerpt: Working with ReactJS - A library by facebook was a great experience for me. React has made building web apps easy by making use of reusable components. This is clearly my viewpoint about the library. 
 ---
 Hello guys! In this article, I would love to talk about my experience working with React.js a frontend open source library developed at Facebook. I have been working with react over a couple of months and for my amazement, it’s a fantastic library. In this post, I would like to discuss some of the advantages and a few disadvantages of using React.
