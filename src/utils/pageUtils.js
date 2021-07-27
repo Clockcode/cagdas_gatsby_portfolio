@@ -37,20 +37,20 @@ const Utils = {
    * @param {number} limit The maximum number of suggested posts to get
    * @return {Array} The `postList` object sorted according to the best match with the `post` object
    */
-  getSuggestedPosts: (post, postList, limit) => {
-    // Get the number of common tags with provided post.
-    const getTagScore = (edge) => {
-      let commonTags = 0;
-      edge.node.frontmatter.tags.forEach((tag) => {
-        commonTags += post.frontmatter.tags.indexOf(tag) !== -1 ? 1 : 0;
-      });
-      return commonTags;
-    };
+  // getSuggestedPosts: (post, postList, limit) => {
+  //   // Get the number of common services with provided post.
+  //   const getServiceScore = (edge) => {
+  //     let commonServices = 0;
+  //     edge.node.frontmatter.services.forEach((service) => {
+  //       commonServices += post.frontmatter.services.indexOf(service) !== -1 ? 1 : 0;
+  //     });
+  //     return commonServices;
+  //   };
 
-    return postList.edges
-      .sort((edgeA, edgeB) => getTagScore(edgeB) - getTagScore(edgeA))
-      .slice(0, limit);
-  },
+  //   return postList.edges
+  //     .sort((edgeA, edgeB) => getServiceScore(edgeB) - getServiceScore(edgeA))
+  //     .slice(0, limit);
+  // },
   /**
    * Pass a post and retrieve a list of related translations.
    * @param {Object} post The post of which retrieve its translations.

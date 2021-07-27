@@ -1,25 +1,18 @@
 import React from 'react';
-import { Row, Col } from 'antd';
-import AboutTile from '../../AbouTile';
-import { stripTags, domHtml } from '../../../utils/stripTags';
-
+// import { Row, Col } from 'antd';
+// import AboutTile from '../../AbouTile';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hello !! My name is Rolwin Reevan Monteiro. I'm a full stack web developer who is
-    passionate about various web technologies. I like to experiment with different web
-    technologies. I have an experience of 3+ years working with LAMP stack, MERN stack
-    and ELK stack. Building fancy UI's just like this one that your seeing 😅 and writing blogs about tech stacks
-    is what Rolwin loves to do. Check my blog which I update every week for some Javascript and some
-    cool notes on web technologies.`,
-  paraTwo: `Currently I work mostly with Javascript technologies like ReactJS and NodeJS. I also
-    have hands on experience working with cloud infrastructures like <b>AWS/GCP</b> and have deployed applications
-    keeping scalability in mind. Docker, Kubernetes, Jenkins, SonarQube are some of the cool
-    tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
+  paraOne: `Hello !! My name is Cagdas (Chad) Muldur. I'm a UI/UX Designer who is
+    passionate about developing pixel-perfect websites. I focus on the problems user face
+    and the ways to turn them into company gains. Building fancy UI's just like this one
+    that your seeing.`,
+  paraTwo: 'Check my projects to see what I am tackling these days.',
 };
 
 const AboutMe = () => {
-  const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
+  const description = `${pageText.paraOne} ${pageText.paraTwo}`;
   return (
     <>
       <div>
@@ -27,54 +20,64 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+          keywords={[
+            'Cagdas',
+            'Muldur',
+            'UI/UX Designer',
+            'Front-End developer',
+            'Figma',
+            'Photoshop',
+            'Illustrator',
+            'Javascript',
+            'ReactJS',
+            'Gatsby',
+          ]}
         />
         <h1 className="titleSeparate">About Me</h1>
-        <p>
-          {pageText.paraOne}
-        </p>
-        <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
+        <p>{pageText.paraOne}</p>
+        <p dangerouslySetInnerHTML={{ __html: pageText.paraTwo }} />
       </div>
-      <Row gutter={[20, 20]}>
+
+      {/* <Row gutter={[20, 20]}>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="location.png"
             height={60}
             alt="location image"
-            textH4="Born and bought up in"
-            textH3="Mangalore, KA, India"
+            // textH4="Residing at"
+            textH3="Resides at Toronto"
           />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        </Col> */}
+      {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="coffee.png"
             alt="coffee image"
             textH4="Love Coffee"
             textH3="Coffee + Me = Happiness"
           />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        </Col> */}
+      {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="meeting.png"
             alt="meeting image"
-            textH4="Socially Awkward"
-            textH3="At times"
+            // textH4="Loves connecting"
+            textH3="Loves Connecting"
           />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        </Col> */}
+      {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="motorcycle.png"
             alt="motorcycle image"
             textH4="Love Riding"
             textH3="Biker for life"
           />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        </Col> */}
+      {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="web.png"
             alt="web image"
-            textH4="Self Taught Programmer"
-            textH3="Thanks to the Web Resources"
+            textH3="Self Taught Designer"
+            // textH3="Thanks to the Web Resources"
             height={60}
             width={60}
           />
@@ -83,13 +86,13 @@ const AboutMe = () => {
           <AboutTile
             img="graduation.png"
             alt="graduation image"
-            textH4="Pursued B.Tech in"
-            textH3="Computer Science"
+            // textH4="Pursued B.Tech in"
+            textH3="Computer Programming Graduate"
             height={60}
             width={60}
           />
         </Col>
-      </Row>
+      </Row> */}
     </>
   );
 };

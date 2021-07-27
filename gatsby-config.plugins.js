@@ -16,8 +16,8 @@ module.exports = [
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      name: 'Rolwin Reevan',
-      short_name: 'Rolwin Reevan',
+      name: 'Cagdas Muldur',
+      short_name: 'Cagdas Muldur',
       start_url: '/',
       background_color: '#304CFD',
       theme_color: '#304CFD',
@@ -84,15 +84,15 @@ module.exports = [
       },
     },
   },
-  {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      // The property ID; the tracking code won't be generated without it
-      trackingId: config.googleAnalyticTrackingId,
-      // Defines where to place the tracking script - `true` in the head and `false` in the body
-      head: false,
-    },
-  },
+  // {
+  //   resolve: 'gatsby-plugin-google-analytics',
+  //   options: {
+  //     // The property ID; the tracking code won't be generated without it
+  //     trackingId: config.googleAnalyticTrackingId,
+  //     // Defines where to place the tracking script - `true` in the head and `false` in the body
+  //     head: false,
+  //   },
+  // },
   {
     resolve: 'gatsby-plugin-nprogress',
     options: {
