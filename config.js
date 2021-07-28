@@ -15,8 +15,8 @@ module.exports = {
   },
   social: {
     github: 'https://github.com/clockcode',
-    // facebook: 'https://www.facebook.com/rolwin.monteiro',
-    // twitter: 'https://twitter.com/rolwin100',
+    linkedin: 'https://www.linkedin.com/in/cagdasm',
+    // fiverr: 'https://twitter.com/rolwin100',
     // instagram: 'https://www.instagram.com/reevan100/',
     rss: '/rss.xml',
   },

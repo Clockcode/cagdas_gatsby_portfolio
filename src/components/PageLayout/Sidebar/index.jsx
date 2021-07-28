@@ -12,7 +12,7 @@ import Config from '../../../../config';
 
 const { Content } = Layout;
 const {
-  facebook, github, instagram, twitter,
+  linkedin, github,
 } = Config.social;
 
 const DomContent = () => (
@@ -26,21 +26,12 @@ const DomContent = () => (
           <span>Muldur</span>
         </h2>
       </div>
-      <div className={`${style.badge} ${style.badgeGray}`}>Front-End Developer</div>
-      <div className="centerAlign box">
-        <a href={facebook} target="_blank" label="button" rel="noopener noreferrer"><FA name="facebook-f" /></a>
-        <a href={twitter} target="_blank" label="button" rel="noopener noreferrer"><FA name="twitter" /></a>
+      <div className={`${style.badge} ${style.badgeGray}`}>UI/UX Developer</div>
+      <div className="centerAlign">
+        <a href={linkedin} target="_blank" label="button" rel="noopener noreferrer"><FA name="linkedin" /></a>
         <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" /></a>
-        <a href={instagram} target="_blank" label="button" rel="noopener noreferrer"><FA name="instagram" /></a>
       </div>
       <ul className={`box ${style.badge} contactBlock`}>
-        <li className={`${style.contactBlockItem}`}>
-          <span>
-            <FeatherIcon size="19" icon="calendar" />
-            {' '}
-          </span>
-&nbsp; &nbsp; Apr 5,2000
-        </li>
         <li className={`${style.contactBlockItem}`}>
           <span><FeatherIcon size="19" icon="map-pin" /></span>
           {' '}
@@ -88,10 +79,10 @@ const Sidebar = (props) => {
       <Layout>
         <Content className={`${style.content} ${style.background}`}>
           <Row>
-            <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
+            <Col sm={24} md={9} lg={7} className={style.sidebarContent}>
               { domContent }
             </Col>
-            <Col sm={24} md={15} lg={18}>
+            <Col sm={24} md={15} lg={16}>
               <Layout className={`${style.background} ${style.boxContent} borderRadiusSection`}>
                 { children }
               </Layout>
