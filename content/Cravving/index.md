@@ -1,9 +1,9 @@
 ---
-title: Cravving – The widely used python framework for web development
+title: Cravving – UI/UX Design
 path: projects/cravving-single-page-design
 demo: https://www.figma.com/proto/N3enU32Ljpywtmc63W85S1/Cravving?page-id=342%3A144&node-id=401%3A1227&viewport=1221%2C914%2C0.39563390612602234&scaling=scale-down-width
 cover: https://i.ibb.co/gzfDTLc/cravving.jpg
-excerpt: Django is a widely used python framework for web development. Learn what makes django so popular for backend development and why many startups and Tech giants prefer Django.
+excerpt: Cravving is an imaginary food delivery website design with custom graphic assets. color choice and interface design influenced by skip the dishes website. 
 ---
 Django is a full stack python web framework for web development. I have been working with Django from 2016 and it's my first ever framework that I had learned back then. It is a wonderful framework that provides some of the out of box features for rapid web development.
 
