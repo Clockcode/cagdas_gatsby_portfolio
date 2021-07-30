@@ -1,8 +1,10 @@
 import React from 'react';
-// import { Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 // import AboutTile from '../../AbouTile';
 import style from './AboutMe.module.less';
 import SEO from '../../Seo';
+// eslint-disable-next-line import/no-unresolved
+import PostCard from '../../PostCard';
 
 const pageText = {
   paraOne: `Hello !! My name is Cagdas (Chad) Muldur. I'm a UI/UX Designer who is
@@ -11,8 +13,9 @@ const pageText = {
   paraTwo: 'Check my projects to see what I am tackling these days.',
 };
 
-const AboutMe = () => {
+const AboutMe = ({data}) => {
   const description = `${pageText.paraOne} ${pageText.paraTwo}`;
+  console.log("ozan", data);
   return (
     <>
       <div>
@@ -36,6 +39,17 @@ const AboutMe = () => {
         <h1 className="titleSeparate">About Me</h1>
         <p className={style.paragraph}>{pageText.paraOne}</p>
         <p className={style.paragraph} dangerouslySetInnerHTML={{ __html: pageText.paraTwo }} />
+        <div className="marginTopTitle">
+          <h1 className="titleSeparate">Projects</h1>
+        </div>
+        <Row gutter={[20, 20]}>
+          {data.allMarkdownRemark && data.allMarkdownRemark.edges.slice(0, 3).map((val, key) => (
+            // eslint-disable-next-line react/no-array-index-key
+            <Col key={key} xs={24} sm={24} md={12} lg={8}>
+              <PostCard data={val} />
+            </Col>
+          ))}
+        </Row>
       </div>
     </>
   );
