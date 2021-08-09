@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Layout, Row, Col } from 'antd';
+import PostCard from '../../components/PostCard';
 import Header from '../../components/PageLayout/Header';
 
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
-import PostCard from '../../components/PostCard';
 import SEO from '../../components/Seo';
 
 const Project = ({ data }) => (
@@ -25,7 +25,6 @@ const Project = ({ data }) => (
         </div>
         <Row gutter={[20, 20]}>
           {data.allMarkdownRemark && data.allMarkdownRemark.edges.map((val, key) => (
-            // eslint-disable-next-line react/no-array-index-key
             <Col key={key} xs={24} sm={24} md={12} lg={8}>
               <PostCard data={val} />
             </Col>

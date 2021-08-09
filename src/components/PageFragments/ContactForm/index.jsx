@@ -14,7 +14,6 @@ export default () => {
   const [form] = Form.useForm();
   const onFinish = (data) => {
     const formData = new FormData();
-    // eslint-disable-next-line no-restricted-syntax
     for (const key in data) {
       if (data[key]) {
         formData.append(key, data[key]);
@@ -32,7 +31,8 @@ export default () => {
 
   return (
     <Col sm={24} md={24} lg={12} className="widthFull">
-      <Form form={form} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+      <Form form={form} method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" onFinish={onFinish} validateMessages={validateMessages}>
+      <input type="hidden" name="form-name" value="contact" />
         <Form.Item name={['name']} rules={[{ required: true }]}>
           <Input size="large" placeholder="Full Name *" />
         </Form.Item>
