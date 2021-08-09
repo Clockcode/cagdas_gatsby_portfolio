@@ -28,11 +28,11 @@ export default () => {
       // eslint-disable-next-line no-console
       .catch((error) => console.error('Error:', error));
   };
-
+  // data-netlify="true" data-netlify-honeypot="bot-field"
   return (
     <Col sm={24} md={24} lg={12} className="widthFull">
-      <Form form={form} method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" onFinish={onFinish} validateMessages={validateMessages}>
-      <input type="hidden" name="contact" value="contact" />
+      <Form form={form} method="POST" action="https://getform.io/f/b0743d7b-944d-4f9f-8826-10c1877a54e3" name="contact" onFinish={onFinish} validateMessages={validateMessages}>
+      {/* <input type="hidden" name="contact" value="contact" /> */}
         <Form.Item name={['name']} rules={[{ required: true }]}>
           <Input size="large" placeholder="Full Name *" />
         </Form.Item>
